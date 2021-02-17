@@ -1,0 +1,16 @@
+version: "3.0"
+services: 
+  nagios4:
+    image: manios/nagios:latest
+    environment:
+      TZ: "Europe/Madrid"
+      NAGIOSADMIN_USER: "nagiosadmin"
+      NAGIOSADMIN_PASS: "nagios1"
+    ports:
+      - "8080:80"
+    volumes:
+      - ./etc/:/opt/nagios/etc/
+      - ./var/:/opt/nagios/var/
+      - ./ssmtp.conf:/etc/ssmtp/ssmtp.conf
+      - ./plugins:/opt/Custom-Nagios-Plugins
+    

@@ -1,0 +1,177 @@
+[1613557055] Nagios 4.4.6 starting... (PID=22)
+[1613557055] Local time is Wed Feb 17 10:17:35 UTC 2021
+[1613557055] LOG VERSION: 2.0
+[1613557055] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613557055] qh: core query handler registered
+[1613557055] qh: echo service query handler registered
+[1613557055] qh: help for the query handler registered
+[1613557055] wproc: Successfully registered manager as @wproc with query handler
+[1613557055] wproc: Registry request: name=Core Worker 44;pid=44
+[1613557055] wproc: Registry request: name=Core Worker 43;pid=43
+[1613557055] wproc: Registry request: name=Core Worker 46;pid=46
+[1613557055] wproc: Registry request: name=Core Worker 45;pid=45
+[1613557055] Successfully launched command file worker with pid 54
+[1613557167] SERVICE ALERT: localhost;HTTP;WARNING;SOFT;1;HTTP WARNING: HTTP/1.1 401 Unauthorized - 691 bytes in 0.000 second response time
+[1613557227] SERVICE ALERT: localhost;HTTP;WARNING;SOFT;2;HTTP WARNING: HTTP/1.1 401 Unauthorized - 691 bytes in 0.000 second response time
+[1613557280] SERVICE ALERT: localhost;SSH;CRITICAL;SOFT;1;connect to address 127.0.0.1 and port 22: Connection refused
+[1613557287] SERVICE ALERT: localhost;HTTP;WARNING;SOFT;3;HTTP WARNING: HTTP/1.1 401 Unauthorized - 691 bytes in 0.000 second response time
+[1613557317] SERVICE ALERT: localhost;Swap Usage;CRITICAL;SOFT;1;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613557340] SERVICE ALERT: localhost;SSH;CRITICAL;SOFT;2;connect to address 127.0.0.1 and port 22: Connection refused
+[1613557347] SERVICE ALERT: localhost;HTTP;WARNING;HARD;4;HTTP WARNING: HTTP/1.1 401 Unauthorized - 691 bytes in 0.000 second response time
+[1613557377] SERVICE ALERT: localhost;Swap Usage;CRITICAL;SOFT;2;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613557400] SERVICE ALERT: localhost;SSH;CRITICAL;SOFT;3;connect to address 127.0.0.1 and port 22: Connection refused
+[1613557437] SERVICE ALERT: localhost;Swap Usage;CRITICAL;SOFT;3;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613557460] SERVICE ALERT: localhost;SSH;CRITICAL;HARD;4;connect to address 127.0.0.1 and port 22: Connection refused
+[1613557497] SERVICE NOTIFICATION: nagiosadmin;localhost;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613557497] SERVICE ALERT: localhost;Swap Usage;CRITICAL;HARD;4;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613557497] wproc: NOTIFY job 5 from worker Core Worker 45 is a non-check helper but exited with return code 1
+[1613557497] wproc:   host=localhost; service=Swap Usage; contact=nagiosadmin
+[1613557497] wproc:   early_timeout=0; exited_ok=1; wait_status=256; error_code=0;
+[1613557497] wproc:   stderr line 01: [<-] 220 smtp.gmail.com ESMTP h18sm2295051wmm.30 - gsmtp
+[1613557497] wproc:   stderr line 02: [->] EHLO raspberrypi
+[1613557497] wproc:   stderr line 03: [<-] 250 SMTPUTF8
+[1613557497] wproc:   stderr line 04: [->] STARTTLS
+[1613557497] wproc:   stderr line 05: [<-] 220 2.0.0 Ready to start TLS
+[1613557497] wproc:   stderr line 06: [->] EHLO raspberrypi
+[1613557497] wproc:   stderr line 07: [<-] 250 SMTPUTF8
+[1613557497] wproc:   stderr line 08: [->] AUTH LOGIN
+[1613557497] wproc:   stderr line 09: [<-] 334 VXNlcm5hbWU6
+[1613557497] wproc:   stderr line 10: [->] bXlnbWFpbGFjY291bnRAZ21haWwuY29t
+[1613557497] wproc:   stderr line 11: [<-] 334 UGFzc3dvcmQ6
+[1613557497] wproc:   stderr line 12: [<-] 535 5.7.8  https://support.google.com/mail/?p=BadCredentials h18sm2295051wmm.30 - gsmtp
+[1613557497] wproc:   stderr line 13: sendmail: Authorization failed (535 5.7.8  https://support.google.com/mail/?p=BadCredentials h18sm2295051wmm.30 - gsmtp)
+[1613560509] Caught SIGTERM, shutting down...
+[1613560509] Successfully shutdown... (PID=22)
+[1613560517] Nagios 4.4.6 starting... (PID=18)
+[1613560517] Local time is Wed Feb 17 11:15:17 UTC 2021
+[1613560517] LOG VERSION: 2.0
+[1613560517] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613560517] qh: core query handler registered
+[1613560517] qh: echo service query handler registered
+[1613560517] qh: help for the query handler registered
+[1613560517] wproc: Successfully registered manager as @wproc with query handler
+[1613560517] wproc: Registry request: name=Core Worker 24;pid=24
+[1613560517] wproc: Registry request: name=Core Worker 25;pid=25
+[1613560517] wproc: Registry request: name=Core Worker 26;pid=26
+[1613560517] wproc: Registry request: name=Core Worker 23;pid=23
+[1613560517] Successfully launched command file worker with pid 27
+[1613560545] Caught SIGTERM, shutting down...
+[1613560545] Successfully shutdown... (PID=18)
+[1613560548] Nagios 4.4.6 starting... (PID=19)
+[1613560548] Local time is Wed Feb 17 11:15:48 UTC 2021
+[1613560548] LOG VERSION: 2.0
+[1613560548] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613560548] qh: core query handler registered
+[1613560548] qh: echo service query handler registered
+[1613560548] qh: help for the query handler registered
+[1613560548] wproc: Successfully registered manager as @wproc with query handler
+[1613560548] wproc: Registry request: name=Core Worker 23;pid=23
+[1613560548] wproc: Registry request: name=Core Worker 24;pid=24
+[1613560548] wproc: Registry request: name=Core Worker 22;pid=22
+[1613560548] wproc: Registry request: name=Core Worker 21;pid=21
+[1613560548] Successfully launched command file worker with pid 27
+[1613560573] Nagios 4.4.6 starting... (PID=17)
+[1613560573] Local time is Wed Feb 17 11:16:13 UTC 2021
+[1613560573] LOG VERSION: 2.0
+[1613560573] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613560573] qh: core query handler registered
+[1613560573] qh: echo service query handler registered
+[1613560573] qh: help for the query handler registered
+[1613560573] wproc: Successfully registered manager as @wproc with query handler
+[1613560573] wproc: Registry request: name=Core Worker 20;pid=20
+[1613560573] wproc: Registry request: name=Core Worker 22;pid=22
+[1613560573] wproc: Registry request: name=Core Worker 21;pid=21
+[1613560573] wproc: Registry request: name=Core Worker 23;pid=23
+[1613560573] Successfully launched command file worker with pid 26
+[1613560598] Caught SIGTERM, shutting down...
+[1613560598] Successfully shutdown... (PID=17)
+[1613560678] Nagios 4.4.6 starting... (PID=18)
+[1613560678] Local time is Wed Feb 17 11:17:58 UTC 2021
+[1613560678] LOG VERSION: 2.0
+[1613560678] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613560678] qh: core query handler registered
+[1613560678] qh: echo service query handler registered
+[1613560678] qh: help for the query handler registered
+[1613560678] wproc: Successfully registered manager as @wproc with query handler
+[1613560678] wproc: Registry request: name=Core Worker 26;pid=26
+[1613560678] wproc: Registry request: name=Core Worker 23;pid=23
+[1613560678] wproc: Registry request: name=Core Worker 25;pid=25
+[1613560678] wproc: Registry request: name=Core Worker 24;pid=24
+[1613560679] Successfully launched command file worker with pid 27
+[1613560907] Caught SIGTERM, shutting down...
+[1613560907] Successfully shutdown... (PID=18)
+[1613560910] Nagios 4.4.6 starting... (PID=25)
+[1613560910] Local time is Wed Feb 17 12:21:50 CET 2021
+[1613560910] LOG VERSION: 2.0
+[1613560910] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613560910] qh: core query handler registered
+[1613560910] qh: echo service query handler registered
+[1613560910] qh: help for the query handler registered
+[1613560910] wproc: Successfully registered manager as @wproc with query handler
+[1613560910] wproc: Registry request: name=Core Worker 32;pid=32
+[1613560910] wproc: Registry request: name=Core Worker 29;pid=29
+[1613560910] wproc: Registry request: name=Core Worker 31;pid=31
+[1613560910] wproc: Registry request: name=Core Worker 30;pid=30
+[1613560910] Successfully launched command file worker with pid 38
+[1613561097] SERVICE NOTIFICATION: nagiosadmin;localhost;Swap Usage;CRITICAL;notify-service-by-email;SWAP CRITICAL - 0% free (0 MB out of 0 MB) - Swap is either disabled, not present, or of zero size.
+[1613561098] wproc: NOTIFY job 1 from worker Core Worker 30 is a non-check helper but exited with return code 1
+[1613561098] wproc:   host=localhost; service=Swap Usage; contact=nagiosadmin
+[1613561098] wproc:   early_timeout=0; exited_ok=1; wait_status=256; error_code=0;
+[1613561098] wproc:   stderr line 01: [<-] 220 smtp.gmail.com ESMTP t7sm3376988wrv.75 - gsmtp
+[1613561098] wproc:   stderr line 02: [->] EHLO raspberrypi
+[1613561098] wproc:   stderr line 03: [<-] 250 SMTPUTF8
+[1613561098] wproc:   stderr line 04: [->] STARTTLS
+[1613561098] wproc:   stderr line 05: [<-] 220 2.0.0 Ready to start TLS
+[1613561098] wproc:   stderr line 06: [->] EHLO raspberrypi
+[1613561098] wproc:   stderr line 07: [<-] 250 SMTPUTF8
+[1613561098] wproc:   stderr line 08: [->] AUTH LOGIN
+[1613561098] wproc:   stderr line 09: [<-] 334 VXNlcm5hbWU6
+[1613561098] wproc:   stderr line 10: [->] bXlnbWFpbGFjY291bnRAZ21haWwuY29t
+[1613561098] wproc:   stderr line 11: [<-] 334 UGFzc3dvcmQ6
+[1613561098] wproc:   stderr line 12: [<-] 535 5.7.8  https://support.google.com/mail/?p=BadCredentials t7sm3376988wrv.75 - gsmtp
+[1613561098] wproc:   stderr line 13: sendmail: Authorization failed (535 5.7.8  https://support.google.com/mail/?p=BadCredentials t7sm3376988wrv.75 - gsmtp)
+[1613561518] Caught SIGTERM, shutting down...
+[1613561518] Successfully shutdown... (PID=25)
+[1613561521] Nagios 4.4.6 starting... (PID=25)
+[1613561521] Local time is Wed Feb 17 12:32:01 CET 2021
+[1613561521] LOG VERSION: 2.0
+[1613561521] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613561521] qh: core query handler registered
+[1613561521] qh: echo service query handler registered
+[1613561521] qh: help for the query handler registered
+[1613561521] wproc: Successfully registered manager as @wproc with query handler
+[1613561521] wproc: Registry request: name=Core Worker 30;pid=30
+[1613561521] wproc: Registry request: name=Core Worker 29;pid=29
+[1613561521] wproc: Registry request: name=Core Worker 31;pid=31
+[1613561521] wproc: Registry request: name=Core Worker 32;pid=32
+[1613561521] Successfully launched command file worker with pid 38
+[1613561575] Caught SIGTERM, shutting down...
+[1613561575] Successfully shutdown... (PID=25)
+[1613561610] Nagios 4.4.6 starting... (PID=25)
+[1613561610] Local time is Wed Feb 17 12:33:30 CET 2021
+[1613561610] LOG VERSION: 2.0
+[1613561610] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613561610] qh: core query handler registered
+[1613561610] qh: echo service query handler registered
+[1613561610] qh: help for the query handler registered
+[1613561610] wproc: Successfully registered manager as @wproc with query handler
+[1613561610] wproc: Registry request: name=Core Worker 30;pid=30
+[1613561610] wproc: Registry request: name=Core Worker 29;pid=29
+[1613561610] wproc: Registry request: name=Core Worker 28;pid=28
+[1613561610] wproc: Registry request: name=Core Worker 27;pid=27
+[1613561611] Successfully launched command file worker with pid 33
+[1613561672] Caught SIGTERM, shutting down...
+[1613561672] Successfully shutdown... (PID=25)
+[1613561737] Nagios 4.4.6 starting... (PID=27)
+[1613561737] Local time is Wed Feb 17 12:35:37 CET 2021
+[1613561737] LOG VERSION: 2.0
+[1613561737] qh: Socket '/opt/nagios/var/rw/nagios.qh' successfully initialized
+[1613561737] qh: core query handler registered
+[1613561737] qh: echo service query handler registered
+[1613561737] qh: help for the query handler registered
+[1613561737] wproc: Successfully registered manager as @wproc with query handler
+[1613561737] wproc: Registry request: name=Core Worker 33;pid=33
+[1613561737] wproc: Registry request: name=Core Worker 32;pid=32
+[1613561737] wproc: Registry request: name=Core Worker 31;pid=31
+[1613561737] wproc: Registry request: name=Core Worker 34;pid=34
+[1613561737] Successfully launched command file worker with pid 35
