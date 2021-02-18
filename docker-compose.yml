@@ -13,4 +13,7 @@ services:
       - ./var/:/opt/nagios/var/
       - ./ssmtp.conf:/etc/ssmtp/ssmtp.conf
       - ./plugins:/opt/Custom-Nagios-Plugins
-    
+  mailhog:
+    image: mailhog/mailhog
+    ports:
+      - "9025:8025"
